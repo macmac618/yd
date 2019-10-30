@@ -69,8 +69,8 @@ function TotalPrice(){
 	$(".product-em").each(function(){
 		
 		if($(this).is(".product-xz")){
-			var price = parseInt($(this).parents(".product-ckb").siblings().find(".price").text());//得到产品单价
-			var slproice = parseInt($(this).parents(".product-ckb").siblings().find(".product-num").val());//得到产品数量
+			var price = $(this).parents(".product-ckb").siblings().find(".price").text();//得到产品单价
+			var slproice = $(this).parents(".product-ckb").siblings().find(".product-num").val();//得到产品数量
 			var dgtotal = price * slproice;
 			total+=dgtotal;
 		}
